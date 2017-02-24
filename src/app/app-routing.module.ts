@@ -4,16 +4,19 @@ import { Routes, RouterModule } from '@angular/router';
 import { MenuComponent } from './menu/menu.component';
 import { AboutComponent } from './about/about.component';
 import { HistoryComponent } from './history/history.component';
+import { Game1Component } from './game1/game1.component';
+import { Game2Component } from './game2/game2.component';
+import { GamesComponent } from './games/games.component';
 
 const routes: Routes = [
 {
 	path: '',
-	redirectTo: 'menu',
-	pathMatch: 'full'
+	component: MenuComponent
 },
 {
-	path: 'menu',
-	component: MenuComponent
+	path: 'home',
+	redirectTo: '/',
+	pathMatch: 'full'
 },
 {
 	path: 'about',
@@ -22,6 +25,23 @@ const routes: Routes = [
 {
 	path: 'history',
 	component: HistoryComponent
+},
+{
+	path: 'game',
+	children: [
+	{
+		path: '1',
+		component: Game1Component
+	},
+	{
+		path: '2',
+		component: Game2Component
+	}
+	]
+},
+{
+	path: 'games',
+	component: GamesComponent
 }
 ];
 
