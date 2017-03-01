@@ -12,6 +12,7 @@ import { HistoryComponent } from './history/history.component';
 import { Game1Component } from './game1/game1.component';
 import { Game2Component } from './game2/game2.component';
 import { GamesComponent } from './games/games.component';
+import { RestartComponent } from './restart/restart.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { GamesComponent } from './games/games.component';
     HistoryComponent,
     Game1Component,
     Game2Component,
-    GamesComponent
+    GamesComponent,
+    RestartComponent
   ],
   imports: [
     BrowserModule,

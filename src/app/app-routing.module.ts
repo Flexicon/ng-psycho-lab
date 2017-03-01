@@ -7,6 +7,7 @@ import { HistoryComponent } from './history/history.component';
 import { Game1Component } from './game1/game1.component';
 import { Game2Component } from './game2/game2.component';
 import { GamesComponent } from './games/games.component';
+import { RestartComponent } from './restart/restart.component';
 
 const routes: Routes = [
 {
@@ -42,7 +43,10 @@ const routes: Routes = [
 {
 	path: 'games',
 	component: GamesComponent
-}
+},
+{
+	path: 'restart/:id',
+	component: RestartComponent }
 ];
 
 @NgModule({

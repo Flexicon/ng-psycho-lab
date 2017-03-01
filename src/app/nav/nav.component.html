@@ -1,6 +1,6 @@
 <ul class="nav nav-pills">
 	<ng-container  *ngFor='let item of navItems'>
-		<li *ngIf='item.isShown'>
+		<li *ngIf='item.isShown' class="text-uppercase">
 			<a [routerLink]='item.path'>{{item.title}}</a>
 		</li>
 	</ng-container>

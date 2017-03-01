@@ -9,24 +9,22 @@ import { NavItem } from '../navitem';
 	styleUrls: ['./nav.component.css']
 })
 export class NavComponent implements OnInit {
-	private route: string;
 	private navItems: NavItem[];
 
-	constructor(router: Router) {
-		this.route = router.url;
+	constructor(private router: Router) {
 	}
 
 	ngOnInit() {
 		this.navItems = [
 		{
-			path: '/restart',
+			path: '/restart/' + this.router.url.split('/').pop(),
 			title: 'Restart',
-			isShown: this.route.includes('game/')
+			isShown: this.router.url.includes('game/')
 		},
 		{
 			path: '/history/1',
 			title: 'Game 1',
-			isShown: this.route.includes('history')
+			isShown: this.router.url.includes('history')
 		},
 		{
 			path: '/home',
@@ -36,12 +34,12 @@ export class NavComponent implements OnInit {
 		{
 			path: '/history/2',
 			title: 'Game 2',
-			isShown: this.route.includes('history')
+			isShown: this.router.url.includes('history')
 		},
 		{
 			path: '/next-game',
 			title: 'Next Game',
-			isShown: this.route.includes('game/')
+			isShown: this.router.url.includes('game/')
 		}
 		];
 	}

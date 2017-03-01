@@ -1,8 +1,12 @@
 ul {
 	position: absolute;
-	bottom: 0;
+	bottom: 3vw;
 	left: 0;
     width: 100%;
     display: flex;
     justify-content: space-around;
+}
+
+ul > li > a {
+	font-size: 5vw;
 }
