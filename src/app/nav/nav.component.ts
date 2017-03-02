@@ -37,9 +37,9 @@ export class NavComponent implements OnInit {
 			isShown: this.router.url.includes('history')
 		},
 		{
-			path: '/next-game',
+			path: '/restart/2',
 			title: 'Next Game',
-			isShown: this.router.url.includes('game/')
+			isShown: this.router.url.includes('game/1')
 		}
 		];
 	}

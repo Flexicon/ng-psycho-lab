@@ -1,5 +1,30 @@
-<p>
-  game2 works!
-</p>
+<div id="game2board" class="game-wrap">
+	<div class="row buttons">
+		<div class="col-xs-2">
+			<div class="grid mid">
+				<div class="grid-row" *ngFor='let row of rows'>
+					<div class="grid-col">
+						<button class='btn btn-primary' [attr.data-row]='row' (click)='btnClick($event)'></button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-xs-2">
+			<div class="grid top">
+				<div class="grid-row" *ngFor='let row of rows'>
+					<div class="grid-col">
+						<button class='btn btn-secondary' [attr.data-row]='row'></button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="score-wrap text-uppercase text-center">
+			<h2>Hits<span id="score">{{ hits }}</span></h2>
+			<h2>Misses<span id="score">{{ misses }}</span></h2>
+		</div>
+	</div>
+</div>
 
 <app-nav></app-nav>

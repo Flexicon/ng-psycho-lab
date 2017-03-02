@@ -3,10 +3,13 @@ ul {
 	bottom: 3vw;
 	left: 0;
     width: 100%;
-    display: flex;
-    justify-content: space-around;
+}
+
+ul > li {
+	text-align: center;
+	width: 32%;
 }
 
 ul > li > a {
-	font-size: 5vw;
+	font-size: 4.5vw;
 }
