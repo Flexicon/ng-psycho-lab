@@ -1,0 +1,29 @@
+.bg {
+  background: url('../../assets/bg-menu.png') no-repeat;
+  -webkit-background-size: contain;
+  background-size: contain;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+ul {
+  width: 50vw;
+  position: absolute;
+  top: 30vh;
+  left: 25vw;
+}
+
+li {
+  background: #fff;
+  border: 2px solid #000;
+  font-size: 5vw;
+  text-align: center;
+  margin-bottom: 5vh;
+}
+
+a {
+  color: #CB4C4C;
+}
