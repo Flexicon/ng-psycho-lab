@@ -1,5 +1,5 @@
 export class NavItem {
-	path: string;
-	title: string;
-	isShown: boolean;
+  path: string;
+  title: string;
+  isShown: boolean;
 }

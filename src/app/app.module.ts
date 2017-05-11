@@ -13,6 +13,7 @@ import { Game1Component } from './game1/game1.component';
 import { Game2Component } from './game2/game2.component';
 import { GamesComponent } from './games/games.component';
 import { RestartComponent } from './restart/restart.component';
+import { GamebuttonComponent } from './gamebutton/gamebutton.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { RestartComponent } from './restart/restart.component';
     Game1Component,
     Game2Component,
     GamesComponent,
-    RestartComponent
+    RestartComponent,
+    GamebuttonComponent
   ],
   imports: [
     BrowserModule,

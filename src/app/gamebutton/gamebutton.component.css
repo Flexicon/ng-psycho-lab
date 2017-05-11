@@ -1,0 +1,23 @@
+.btn {
+  border-color: transparent;
+  margin: 0;
+  padding: 0;
+  width: 6.5vw;
+  height: 6.5vw;
+}
+
+.btn-primary {
+  background: #E63946;
+}
+
+.btn-primary:hover {
+  background-color: #a72630;
+}
+
+.btn-secondary {
+  background: #457B9D;
+}
+
+.btn.active {
+  background: #18bc9c;
+}

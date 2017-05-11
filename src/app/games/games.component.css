@@ -1,48 +1,24 @@
 .game-wrap {
-	margin-top: 10vh;
+  margin-top: 10vh;
 }
 
 .grid-row {
-	display: flex;
-	flex-flow: row nowrap;
-	justify-content: space-around;
-	margin-bottom: 3vw;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  margin-bottom: 3vw;
 }
 
 .grid-col {
-	display: inline-block;
-}
-
-.btn {
-	border-color: transparent;
-	margin: 0;
-	padding: 0;
-	width: 6.5vw;
-	height: 6.5vw;
-}
-
-.btn-primary {
-	background: #E63946;
-}
-
-.btn-primary:hover {
-	background-color: #a72630;
-}
-
-.btn-secondary {
-	background: #457B9D;
-}
-
-.btn.active {
-	background: #18bc9c;
+  display: inline-block;
 }
 
 .score-wrap {
-	display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-around;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
 }
 
 #score {
-	display: block;
+  display: block;
 }

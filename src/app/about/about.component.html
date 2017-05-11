@@ -1,5 +1,20 @@
-<p>
-  about works!
-</p>
+<div class="wrap">
+  <div class="title main">Psycho-Testing Lab</div>
+
+  <p class="about-text">
+    A web application created in hopes of comparing test results of Psychoanalysis tests
+    such as "<a [href]="piorkowski" target="_blank">Aparat Piórkowskiego</a>" and "<a [href]="krzyzowy" target="_blank">Aparat Krzyżowy</a>"
+    with the ones gotten from this virtual version of said testing Apparatus.
+  </p>
+
+  <hr />
+
+  <div class="title team">The team</div>
+  <ul>
+    <li *ngFor="let member of team">
+      {{ member }}
+    </li>
+  </ul>
+</div>
 
 <app-nav></app-nav>
