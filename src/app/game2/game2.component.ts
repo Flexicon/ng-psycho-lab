@@ -29,17 +29,15 @@ export class Game2Component implements OnInit, AfterViewInit {
   }
 
   btnClick(e) {
-    console.log(e);
-    const btnRow: number = +e.currentTarget.dataset.row;
+    const btnRow: number = +e.target.dataset.row;
     console.log(this.currentRow === btnRow);
 
-    if (this.currentRow === btnRow) {
+    if (this.currentRow !== btnRow) {
+      this.misses++;
+    } else {
       this.hits++;
       document.querySelectorAll('.top [data-row="' + this.currentRow + '"]')[0].classList.toggle('active');
       this.pickRandom();
-    }
-    else {
-      this.misses++;
     }
   }
 

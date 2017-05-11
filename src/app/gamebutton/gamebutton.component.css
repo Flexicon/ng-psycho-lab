@@ -7,7 +7,7 @@
 }
 
 .btn-primary {
-  background: #E63946;
+  background-color: #CB4C4C;
 }
 
 .btn-primary:hover {
@@ -15,9 +15,9 @@
 }
 
 .btn-secondary {
-  background: #457B9D;
+  background: #B3B3B3;
 }
 
 .btn.active {
-  background: #18bc9c;
+  background: #FFCE4C;
 }
