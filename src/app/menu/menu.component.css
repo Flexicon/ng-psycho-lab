@@ -17,13 +17,26 @@ ul {
 }
 
 li {
-  background: #fff;
-  border: 2px solid #000;
-  font-size: 5vw;
-  text-align: center;
-  margin-bottom: 5vh;
+  margin-bottom: 1vh;
 }
 
-a {
-  color: #CB4C4C;
+a > img {
+  max-width: 100%;
+}
+
+li > a {
+  padding: 0;
+}
+
+#history, #about {
+  width: 60%;
+  display: inline-block;
+  float: left;
+}
+
+#games {
+  width: 38%;
+  display: inline-block;
+  float: right;
+  margin-top: -41%;
 }
