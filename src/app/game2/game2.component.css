@@ -1,14 +1,31 @@
+.bg {
+  background: url('../../assets/game2/tyl.png') no-repeat;
+  -webkit-background-size: contain;
+  background-size: contain;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+}
+
 .game-wrap {
-	margin-top: 5vh;
+  margin-top: 5vh;
 }
 
 .game-wrap > .row.buttons {
-	display: flex;
-	justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 .score-wrap > h2 {
-	-ms-transform: rotate(90deg); /* IE 9 */
-    -webkit-transform: rotate(90deg); /* Chrome, Safari, Opera */
-    transform: rotate(90deg);
+  -ms-transform: rotate(90deg); /* IE 9 */
+  -webkit-transform: rotate(90deg); /* Chrome, Safari, Opera */
+  transform: rotate(90deg);
+}
+
+.game-over {
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
 }

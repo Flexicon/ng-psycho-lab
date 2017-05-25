@@ -1,15 +1,24 @@
 ul {
-	position: absolute;
-	bottom: 3vw;
-	left: 0;
-    width: 100%;
+  position: absolute;
+  bottom: 3vw;
+  left: 0;
+  width: 100%;
+  text-align: center;
 }
 
 ul > li {
-	text-align: center;
-	width: 32%;
+  text-align: center;
+  width: 32%;
+  display: inline-block;
+  float: initial;
 }
 
 ul > li > a {
-	font-size: 4.5vw;
+  font-size: 4.5vw;
+  color: #000;
+  border: 1px solid #000;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  text-shadow: 1px 4px 3px #aaa;
 }

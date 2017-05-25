@@ -1,0 +1,11 @@
+.bg {
+  background: url('../../assets/game1/tyl.png') no-repeat;
+  -webkit-background-size: contain;
+  background-size: contain;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+}

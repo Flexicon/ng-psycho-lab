@@ -13,15 +13,25 @@ export class Game2Component implements OnInit, AfterViewInit {
   currentRow: number;
   hits: number;
   misses: number;
+  time: number;
+  isTime;
 
   constructor() {
-    this.rows = Array(10).fill(0).map((x, i) => i);
+    this.rows = Array(7).fill(0).map((x, i) => i);
     this.currentRow = 0;
     this.hits = 0;
     this.misses = 0;
+    this.time = 60;
   }
 
   ngOnInit() {
+    this.isTime = setInterval(() => {
+      this.time--;
+      if (this.time <= 0) {
+        clearInterval(this.isTime);
+        this.isTime = false;
+      }
+    }, 1000);
   }
 
   ngAfterViewInit() {

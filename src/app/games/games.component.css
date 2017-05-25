@@ -1,5 +1,5 @@
 .game-wrap {
-  margin-top: 10vh;
+  margin-top: 15vh;
 }
 
 .grid-row {
@@ -19,6 +19,16 @@
   justify-content: space-around;
 }
 
-#score, #misses {
+#score, #misses, #time {
   display: block;
+}
+
+.game-over {
+  position: absolute;
+  top: 45vh;
+  left: calc(50vw - 125px);
+  width: 250px;
+  background: #fff;
+  border: 2px solid;
+  text-align: center;
 }

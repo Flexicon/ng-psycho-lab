@@ -1,3 +1,7 @@
+<div class="bg">
+  <!--wrap for the background to exist in-->
+</div>
+
 <div id="game2board" class="game-wrap">
 	<div class="row buttons">
 		<div class="col-xs-2">
@@ -22,9 +26,14 @@
 	<div class="row">
 		<div class="score-wrap text-uppercase text-center">
 			<h2>Hits<span id="score">{{ hits }}</span></h2>
-			<h2>Misses<span id="score">{{ misses }}</span></h2>
+			<h2>Hits<span id="time">{{ time }}</span></h2>
+			<h2>Misses<span id="misses">{{ misses }}</span></h2>
 		</div>
 	</div>
+</div>
+
+<div *ngIf="!isTime" class="game-over" >
+  <h1>Time's up!</h1>
 </div>
 
 <app-nav></app-nav>
