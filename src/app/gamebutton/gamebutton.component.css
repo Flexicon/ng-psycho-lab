@@ -1,22 +1,14 @@
 .btn {
-  border: none;
-  margin: 0;
-  padding: 0;
+  /*margin: 0;*/
+  /*padding: 0;*/
   width: 10vw;
   height: 10vw;
-  -webkit-background-size: contain;
-  background-size: contain;
-  background-color: #fff;
 }
 
 .btn-primary {
-  -webkit-background-image: url('../../assets/game1/przycisk_zolty.png');
-  background-image: url('../../assets/game1/przycisk_zolty.png');
 }
 
 .btn-primary:hover, .btn-primary:active, .btn-primary:focus {
-  -webkit-background-image: url('../../assets/game1/przycisk_zolty_wcisnety.png');
-  background-image: url('../../assets/game1/przycisk_zolty_wcisnety.png');
   outline: none;
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
@@ -24,13 +16,9 @@
 }
 
 .btn-secondary {
-  -webkit-background-image: url('../../assets/game1/przycisk_szary.png');
-  background-image: url('../../assets/game1/przycisk_szary.png');
 }
 
 .btn.active {
-  -webkit-background-image: url('../../assets/game1/przycisk_czerwony.png');
-  background-image: url('../../assets/game1/przycisk_czerwony.png');
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
   box-shadow: none;

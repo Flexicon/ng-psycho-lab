@@ -24,7 +24,9 @@ export class Game1Component implements OnInit, AfterViewInit {
     this.currentNode = [0, 0];
     this.hits = 0;
     this.misses = 0;
-    this.time = 60;
+    this.time = 30;
+
+    console.log(this.rows, this.cols);
   }
 
   ngOnInit() {
