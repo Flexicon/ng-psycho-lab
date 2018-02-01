@@ -1,0 +1,11 @@
+.flash-messages {
+    position: absolute;
+    bottom: 25px;
+    right: 25px;
+
+    .flash-message {
+        p {
+            margin: 0;
+        }
+    }
+}

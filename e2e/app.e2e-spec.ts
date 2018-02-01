@@ -1,14 +1,14 @@
-import { PsychoLabPage } from './app.po';
+import { AppPage } from './app.po';
 
-describe('psycho-lab App', function() {
-  let page: PsychoLabPage;
+describe('ng-psycho-lab App', () => {
+  let page: AppPage;
 
   beforeEach(() => {
-    page = new PsychoLabPage();
+    page = new AppPage();
   });
 
-  it('should display message saying app works', () => {
+  it('should display welcome message', () => {
     page.navigateTo();
-    expect(page.getParagraphText()).toEqual('app works!');
+    expect(page.getParagraphText()).toEqual('Welcome to app!');
   });
 });

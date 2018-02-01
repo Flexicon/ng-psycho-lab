@@ -1,59 +1,59 @@
-import {NgModule} from '@angular/core';
-import {Routes, RouterModule} from '@angular/router';
+import { NgModule } from '@angular/core';
+import { RouterModule, Routes } from '@angular/router';
 
-import {MenuComponent} from './menu/menu.component';
-import {AboutComponent} from './about/about.component';
-import {HistoryComponent} from './history/history.component';
-import {Game1Component} from './game1/game1.component';
-import {Game2Component} from './game2/game2.component';
-import {GamesComponent} from './games/games.component';
-import {RestartComponent} from './restart/restart.component';
+import { HomeComponent } from './home/home.component';
+import { GamesComponent } from './games/games.component';
+import { RankingComponent } from './ranking/ranking.component';
+import { OnlyLoggedInUsersGuard } from './shared/guards/only-logged-in-users.guard';
+import { LoginComponent } from './login/login.component';
+import { RegisterComponent } from './register/register.component';
+import { Game1Component } from './games/game1/game1.component';
+import { Game2Component } from './games/game2/game2.component';
 
 const routes: Routes = [
-  {
-    path: '',
-    component: MenuComponent
-  },
-  {
-    path: 'home',
-    redirectTo: '/',
-    pathMatch: 'full'
-  },
-  {
-    path: 'about',
-    component: AboutComponent
-  },
-  {
-    path: 'history',
-    component: HistoryComponent
-  },
-  {
-    path: 'game',
-    children: [
-      {
-        path: '1',
-        component: Game1Component
-      },
-      {
-        path: '2',
-        component: Game2Component
-      }
-    ]
-  },
-  {
-    path: 'games',
-    component: GamesComponent
-  },
-  {
-    path: 'restart/:id',
-    component: RestartComponent
-  }
+    {
+        path: '',
+        component: HomeComponent,
+        canActivate: [OnlyLoggedInUsersGuard],
+    },
+    {
+        path: 'login',
+        component: LoginComponent,
+    },
+    {
+        path: 'register',
+        component: RegisterComponent,
+    },
+    {
+        path: 'games',
+        component: GamesComponent,
+        canActivate: [OnlyLoggedInUsersGuard],
+        children: [
+            {
+                path: '1',
+                component: Game1Component
+            },
+            {
+                path: '2',
+                component: Game2Component
+            },
+        ],
+    },
+    {
+        path: 'ranking',
+        component: RankingComponent,
+        canActivate: [OnlyLoggedInUsersGuard],
+    },
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes, { useHash: true })],
-  exports: [RouterModule],
-  providers: []
+    imports: [
+        RouterModule.forRoot(routes),
+    ],
+    exports: [
+        RouterModule
+    ],
+    declarations: []
 })
 export class AppRoutingModule {
 }

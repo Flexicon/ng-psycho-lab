@@ -1,0 +1,45 @@
+.grid-row {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    margin-bottom: 1rem;
+}
+
+.grid-col {
+    display: inline-block;
+}
+
+.score-wrap {
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+}
+
+#score, #misses, #time {
+    display: block;
+}
+
+.game-over {
+    position: absolute;
+    top: 45%;
+    left: calc(50% - 125px);
+    width: 250px;
+    background: #fff;
+    border: 2px solid;
+    text-align: center;
+}
+
+.btn {
+    width: 50px;
+    height: 50px;
+
+    &-danger {
+        background-color: #6b0b08;
+        border-color: #6b0b08;
+
+        &.active {
+            background-color: #ff0000;
+        }
+    }
+}
