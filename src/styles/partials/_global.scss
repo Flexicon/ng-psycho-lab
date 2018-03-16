@@ -1,7 +1,8 @@
 .flash-messages {
     position: absolute;
-    bottom: 25px;
+    top: 25px;
     right: 25px;
+    z-index: 999;
 
     .flash-message {
         p {
